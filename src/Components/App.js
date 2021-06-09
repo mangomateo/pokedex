@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import './App.css';
 import Header from './Header';
+import Footer from './Footer';
 import PokemonContainer from './PokemonContainer';
 
 class App extends Component {
@@ -59,6 +60,7 @@ class App extends Component {
           pokemonFive={this.state.pokemon5}
           pokemonSix={this.state.pokemon6}
         />
+        <Footer />
       </div>
     );
   }

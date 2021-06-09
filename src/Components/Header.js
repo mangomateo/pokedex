@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <h1>Hello, world!</h1>
+        <h1>Random Pokemon Team Generator</h1>
     );
 }
 
