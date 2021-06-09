@@ -23,8 +23,7 @@ footer {
 .card-container {
     display: grid;
     grid-gap: 2em;
-    grid-template-areas: "card card card"
-                         "card card card";
+    grid-template-areas: "card card card card card card";
     margin: 5em;
 }
 
@@ -35,12 +34,13 @@ footer {
     grid-area: "card";
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    align-content: center;
+    justify-content: center;
     padding: 3em;
     border-radius: 10%;
     box-shadow: 10px 10px 5px grey;
 }
 
-.pokemon-card > img {
-    width: 30%;
+.pokemon-card > * {
+    width: 100%;
 }
