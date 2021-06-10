@@ -15,6 +15,15 @@ h1 {
     text-align: center;
 }
 
+h5 {
+    text-transform: capitalize;
+}
+
+img {
+    max-height: 200px;
+    padding: 1em;
+}
+
 footer {
     text-align: center;
 }
@@ -23,7 +32,9 @@ footer {
 .card-container {
     display: grid;
     grid-gap: 2em;
-    grid-template-areas: "card card card card card card";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "card card card" 
+                         "card card card";
     margin: 5em;
 }
 
@@ -36,11 +47,28 @@ footer {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding: 3em;
     border-radius: 10%;
     box-shadow: 10px 10px 5px grey;
+    width: 100%;
 }
 
-.pokemon-card > * {
-    width: 100%;
+@media screen and (max-width: 1086px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "card card"
+                             "card card"
+                             "card card";
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "card"
+                             "card"
+                             "card"
+                             "card"
+                             "card"
+                             "card";
+    }
 }
